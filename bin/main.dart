@@ -1,5 +1,8 @@
-import 'package:maihamabat/maihamabat.dart' as maihamabat;
+import 'package:args/command_runner.dart';
+import 'package:maihamabat/notify_comingsoon.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${maihamabat.calculate()}!');
+  var runner = CommandRunner('maihamabat', 'batch operation for maihama.')
+    ..addCommand(NotifyComingsoon())
+    ..run(arguments);
 }
