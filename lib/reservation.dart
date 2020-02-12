@@ -1,5 +1,6 @@
 import 'package:args/command_runner.dart';
 import 'package:maihamabat/reservation_restaurant.dart';
+import 'package:maihamabat/reservation_show_restaurant.dart';
 
 class Reservation extends Command {
   @override
@@ -9,5 +10,6 @@ class Reservation extends Command {
 
   Reservation() {
     addSubcommand(ReservationRestaurant());
+    addSubcommand(ReservationShowRestaurant());
   }
 }
