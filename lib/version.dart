@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:yaml/yaml.dart';
 import 'package:args/command_runner.dart';
 
 class Version extends Command {
@@ -7,13 +6,12 @@ class Version extends Command {
   final name = 'version';
   @override
   final description = 'Print version.';
+  final String VERSION = 'v0.0.2';
 
   Version();
 
   void run() {
-    var f = File('./pubspec.yaml');
-    var spec = loadYaml(f.readAsStringSync());
-    var version = spec['version'];
-    print('maihamabat ${version}');
+    print('maihamabat: ${VERSION}');
+    print('Dart ${Platform.version}');
   }
 }
