@@ -58,7 +58,7 @@ class ReservationRestaurant extends Command {
     argParser.addOption('date',
         abbr: 'd', help: 'Reservation date(yyyyMMdd) default: today');
     var timeHelp = 'Reservation time(HH:MM) default: first\n'
-        'first: Reserve at first available time time.\n'
+        'first: Reserve at first available time.\n'
         'unspecified: Display reservation page only.';
     argParser.addOption('time', abbr: 't', help: timeHelp);
   }
