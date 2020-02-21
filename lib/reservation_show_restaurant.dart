@@ -62,7 +62,7 @@ class ReservationShowRestaurant extends Command {
       try {
         await reserve(restaurantName, rank, adaltNum, childNum, date, time);
         break;
-      } catch (TimeoutException) {
+      } catch (e) {
         print('Timeout: retry...');
       }
     }
