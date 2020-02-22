@@ -75,9 +75,10 @@ class ReservationRestaurant extends Command {
       printUsage();
       return null;
     }
+    var browser = await puppeteer.launch(headless: false);
     while (true) {
       try {
-        await reserve(restaurantName, adaltNum, childNum, date, time);
+        await reserve(browser, restaurantName, adaltNum, childNum, date, time);
         break;
       } catch (e) {
         print('Timeout: retry...');
@@ -86,13 +87,13 @@ class ReservationRestaurant extends Command {
   }
 
   void reserve(
+    Browser browser,
     String restaurantName,
     int adaltNum,
     int childNum,
     String date,
     String time,
   ) async {
-    var browser = await puppeteer.launch(headless: false);
     var page = await browser.newPage();
     await page.goto('${baseUrl}/top/', wait: Until.networkIdle);
     while (true) {
