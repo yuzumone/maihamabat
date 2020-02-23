@@ -20,7 +20,7 @@ class ReservationRestaurant extends Command {
       'RMGL0',
       'RRDC0',
       'RJRS0',
-      'RHZB0',
+      'RHZB1',
       'RCHM0',
       'REPG0',
       'ROCE0',
@@ -31,6 +31,9 @@ class ReservationRestaurant extends Command {
       'RSWG0',
       'RCAN0',
       'RCAN0',
+      'RHPL2',
+      'RDML2',
+      'RDML4',
     ], allowedHelp: {
       'RESC0': 'Eastside Cafe',
       'RBBY0': 'Blue Bayou Restaurant',
@@ -40,7 +43,7 @@ class ReservationRestaurant extends Command {
       'RMGL0': 'Magellan\'s',
       'RRDC0': 'Ristorante di Canaletto',
       'RJRS0': 'Restaurant Sakura',
-      'RHZB0': 'Horizon Bay Restaurant',
+      'RHZB1': 'Horizon Bay Restaurant',
       'RCHM0': 'Chef Mickey',
       'REPG0': 'Empire Grill',
       'ROCE0': 'Oceano (buffet)',
@@ -50,6 +53,9 @@ class ReservationRestaurant extends Command {
       'RBVL1': 'BellaVista Lounge (Wall Side)',
       'RSWG0': 'Sherwood Garden Restaurant',
       'RCAN0': 'Canna',
+      'RHPL2': 'Hyperion Lounge (KINGDOM HEARTS Special Cake Set)',
+      'RDML2': 'Dreamers Lounge (Afternoon tea set)',
+      'RDML4': 'Dreamers Lounge (Pasta set)',
     });
     argParser.addOption('adalt-num',
         abbr: 'a', help: 'Adalt number default: 1');
