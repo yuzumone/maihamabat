@@ -1,3 +1,8 @@
-## 1.0.0
+# maihamabat
+## v0.0.2
+- Improve reservation command
+- Fix restaurant name
+- Fix version command
 
-- Initial version, created by Stagehand
+## v0.0.1
+- Initial version

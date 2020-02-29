@@ -1,4 +1,20 @@
-A sample command-line application.
+# maihamabat
+## Usage
+```
+> maihamabat --help
+batch operation for maihama.
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Usage: maihamabat <command> [arguments]
+
+Global options:
+-h, --help    Print this usage information.
+
+Available commands:
+  help                Display help information for maihamabat.
+  notify-comingsoon   Notify comingsoon item to slack.
+  reservation         Auto reservation.
+  version             Print version.
+```
+
+## License
+MIT
