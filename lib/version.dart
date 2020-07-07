@@ -6,7 +6,7 @@ class Version extends Command {
   final name = 'version';
   @override
   final description = 'Print version.';
-  final String VERSION = 'v0.0.2';
+  final String VERSION = 'v0.0.3';
 
   Version();
 

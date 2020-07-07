@@ -72,8 +72,8 @@ class ReservationRestaurant extends Command {
   @override
   void run() async {
     var restaurantName = argResults['name'];
-    var adaltNum = argResults['adalt-num'] ?? 1;
-    var childNum = argResults['child-num'] ?? 0;
+    var adaltNum = argResults['adalt-num'] ?? '1';
+    var childNum = argResults['child-num'] ?? '0';
     var date =
         argResults['date'] ?? DateFormat('yyyyMMdd').format(DateTime.now());
     var time = argResults['time'];
@@ -95,8 +95,8 @@ class ReservationRestaurant extends Command {
   void reserve(
     Browser browser,
     String restaurantName,
-    int adaltNum,
-    int childNum,
+    String adaltNum,
+    String childNum,
     String date,
     String time,
   ) async {
